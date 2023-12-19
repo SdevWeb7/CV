@@ -1,0 +1,17 @@
+{
+    "name": "veustyle/veustyle1",
+    "description": "Training",
+    "authors": [
+        {
+            "name": "Veustyle"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}

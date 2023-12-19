@@ -1,0 +1,25 @@
+.form-contact {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #19269f;
+}
+.form-contact button {
+    margin-top: 10px;
+}
+.form-horaires {
+    text-align: center;
+}
+.form-horaires select {
+    height: 20px;
+}
+.form-horaires input {
+    width: 25px;
+}
+.form-horaires button {
+    margin-top: 10px;
+}
+.ul-horaires {
+    text-align: center;
+    list-style-type: none;
+}

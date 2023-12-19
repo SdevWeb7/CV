@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Routtage';
+    src: url('/fonts/routtage/Routtage.ttf') format('truetype')
+}
+body::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #1B1E3D; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a8b2f1; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #1B1E3D; /* creates padding around scroll thumb */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B1E3D;
+    color: #a8b2f1;
+    font-family: "Routtage", sans-serif;
+    font-size: small;
+}
+.header {
+    border-bottom: 1px solid #19269f;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 0px 15px black;
+}
+.navbar, .navbar2 {
+    width: 65%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+}
+.header2 {
+    border-bottom: 1px solid #19269f;
+    background-color: #1B1E3D;
+    height: 55px;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 15px black;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 30;
+}
+.menu1, .menu2 {
+    position: absolute;
+    right: 40px;
+    top: 23px;
+}
+.menu svg {
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    fill: #a8b2f1;
+    vertical-align: middle;
+    z-index: 35;
+    cursor: pointer;
+}
+.menu svg:hover {
+    fill: #3041EAFF;
+}
+.menu-futur {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1B1E3D;
+    opacity: .9;
+    z-index: 25;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: center;
+    align-content: center;
+}
+.menu-futur a {
+    display: inline;
+    align-self: center;
+    margin-top: 20px;
+    transform: translateX(-50px);
+    transform: translateY(-50px);
+}
+/******************************************************************************/
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #a8b2f1;
+    margin: 0px 25px 10px 5px;
+}
+a:hover, .active {
+    color: #3041EAFF;
+}
+.active .container-barre {
+    background-color: #3041EAFF;
+}
+a:hover svg, .active svg {
+    fill: #3041EAFF;
+}
+a svg {
+    height: 15px;
+    width: 15px;
+    fill: #a8b2f1;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+/******************************************************************************/
+.container-barre {
+    position: relative;
+    height: 1px;
+    width: 90px;
+    background-color: #a8b2f1;
+    overflow: hidden;
+}
+.barre {
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 90px;
+    height: 1px;
+    background-color: #3041EAFF;
+}
+/******************************************************************************/
+main {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin-top: 0;
+}
+button {
+    cursor: pointer;
+    background-color: #1B1E3D;
+    color: #a8b2f1;
+    border-color: #a8b2f1;
+    padding: 5px;
+}
+button:hover {
+    background-color: #1B1E3D;
+    color: #3041EAFF;
+}
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #19269f;
+    text-align: center;
+}

@@ -1,0 +1,189 @@
+/*************** FONTS ********************/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@300&family=Rambla&display=swap');
+/*************** RESET CSS ********************/
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Audiowide', sans-serif;
+    background-color: #EEE;
+}
+/************** NAVBAR ****************/
+#navbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: top .5s ease-in-out;
+    height: 25px;
+    box-shadow: 0px 0px 4px grey;
+    background: linear-gradient(to bottom, rgb(229, 227, 227), #e0dddd, rgb(218, 218, 218));
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+    padding-top: 4px;
+}
+#nav-title svg{
+    height: 20px;
+    width: 25px;
+    color: black;
+    padding: 0px 5px 5px 5px;
+    opacity: .7;
+    transition: all .7s ease-in-out;
+}
+#nav-title svg:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+#nav-liens {
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#nav-liens svg {
+    height: 16px;
+    width: 16px;
+}
+/**************** MENU DEROULANT **************************/
+.menu-svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu1, .menu2 {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    z-index: 40;
+}
+#svg-exit:hover {
+    fill: white;
+}
+.menu-svg svg {
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    fill: grey;
+    transition: fill .7s ease-in-out;
+    cursor: pointer;
+}
+.menu-svg svg:hover {
+    fill: black;
+}
+.menu-deroulant {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: .9;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    justify-content: space-evenly;
+}
+.menu-deroulant svg {
+    height: 20px;
+    width: 20px;
+    fill: grey;
+    transition: fill .7s ease-in-out;
+    align-self: end;
+}
+.menu-deroulant a {
+    height: 26px;
+    display: flex;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.menu-deroulant a:hover {
+    color: white;
+}
+#merci {
+    margin-right: 5px;
+}
+/******************* FOOTER ************************/
+#footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: bottom 1s ease-in-out;
+    text-align: center;
+    background-color: #ececec;
+    height: 55px;
+    border-top: 1px solid;
+    z-index: 16;
+}
+#footer p {
+    border-top: 1px solid;
+}
+.footer-liens {
+    display: flex;
+    justify-content: space-around;
+    height: 10px;
+    padding-top: 2px;
+}
+/********************* LIENS ************************/
+a {
+    text-decoration: none;
+    color: grey;
+    transition: color .7s ease-in-out;
+}
+a:hover, .active {
+    color: black;
+}
+/****************** ARROW *************************/
+.arrow {
+    background-color: #bbb3b3;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 70px;
+    animation: arrow linear 1.5s;
+    animation-iteration-count: infinite;
+    padding: 4px;
+    box-shadow: 0 0 5px black;
+}
+.arrow svg {
+    height: 20px;
+    width: 20px;
+    padding-right: 2px;
+    transform: translateX(1px) translateY(2px);
+}
+.arrow:hover svg {
+    transform: scale(1.2) translateY(1px) translateX(1px);
+}
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+    38% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/***************** MEDIA ****************************/
+@media (max-width: 620px) {
+    #nav-liens {
+        display: none;
+    }
+}
+/*************** SCROLL BAR *********************/
+body::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: #d3d1d1;; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #696969; /* creates padding around scroll thumb */
+}

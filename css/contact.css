@@ -1,0 +1,100 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background: url("/img/contact.png") fixed;
+}
+h1 {
+    text-align: center;
+    color: #06066e;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#container-formulaire {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+/******************* RÉSEAUX SOCIAUX ********************/
+.container-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons {
+    position: relative;
+    border: 2px solid #b3aca7;
+    color: #726659;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.social-link {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+.icons .social-link svg {
+    position: absolute;
+    top:35%;
+    left: 35%;
+    width: 30px;
+    height: 30px;
+    fill: #838383;
+}
+.social-link:hover {
+    background: #b3aca7;
+}
+.social-link:hover svg {
+    fill: black;
+}
+/**************** FORMULAIRE CONTACT *******************/
+.formulaire-contact {
+    margin-top: 40px;
+    transform: scale(0, 0);
+    transition: transform .7s ease-in-out;
+}
+.formulaire-contact form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.formulaire-contact label {
+    color: #2b730e;
+    margin-top: 30px;
+}
+.formulaire-contact input {
+    font-family: 'Audiowide', sans-serif;
+    align-self: center;
+    width: 200px;
+    margin: 30px 10px 0 10px;
+    border: 2px solid black;
+}
+.formulaire-contact textarea {
+    font-family: 'Audiowide', sans-serif;
+    margin: 20px 10px 0 10px;
+    border: 2px solid black;
+}
+#button {
+    font-family: 'Audiowide', sans-serif;
+    cursor: pointer;
+    align-self: center;
+    width: 100px;
+    height: 25px;
+    margin: 15px;
+    box-shadow: 0 0 2px black;
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+    transition: all .3s ease-in-out;
+ }
+#button:hover {
+    border-bottom: 2px solid black;
+    transform: translateY(2px);
+}
+p {
+    color: #06066e;
+    text-align: center;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@300&family=Rambla&display=swap');
+
+html, body {
+   font-family: 'AudioWide',sans-serif;
+   background-color: lightgray;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 18px;
+}
+/******************* FORMULAIRE*************************/
+.form1 {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   margin: 20px;
+}
+.form1 label, .todo-content, .button {
+   margin: 10px;
+}
+.todo-content {
+   width: 75%;
+   height: 30px;
+   border-radius: 10px;
+   align-self: center;
+   box-shadow: 0 0 2px black;
+}
+.button {
+   font-family: 'AudioWide',sans-serif;
+   cursor: pointer;
+   align-self: center;
+   border-radius: 10px;
+   padding: 5px 10px;
+   box-shadow: 0 0 2px black;
+}
+/******************* TODOS *************************/
+.todos {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+.todo {
+   position: relative;
+   border: 1px solid black;
+   border-radius: 10px;
+   text-align: center;
+   margin-left: 6%;
+   margin-right: 6%;
+   margin-top: 20px;
+   padding: 20px;
+}
+img {
+   border-radius: 10px;
+   width: 20px;
+   height: 20px;
+}
+.form2 {
+   width: 25px;
+   position: absolute;
+   right: 20px;
+   bottom: 15px;
+}
+.form3 {
+   width: 25px;
+   position: absolute;
+   left: 20px;
+   bottom: 18px;
+}
+.form4 {
+   width: 25px;
+   position: absolute;
+   left: 20px;
+   bottom: 18px;
+}
+.button2 {
+   cursor: pointer;
+   background-color: inherit;
+   border: none;
+}
+.button3 {
+   cursor: pointer;
+   background-color: inherit;
+   height: 20px;
+   width: 20px;
+   border: none;
+}
+.button4 {
+   cursor: pointer;
+   background-color: inherit;
+   height: 20px;
+   width: 20px;
+   border-radius: 10px;
+}
+.form3 img {
+   transform: translateX(-7px) translateY(3px);
+}
+/******************* FILTER *************************/
+.container-filter {
+   text-align: center;
+}
+.buttons-filter {
+   font-family: 'AudioWide',sans-serif;
+   height: 40px;
+   width: 80px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.active-btn {
+   background-color: black;
+   color: white;
+   border: 2px solid white;
+}
